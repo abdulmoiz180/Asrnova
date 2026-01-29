@@ -1,0 +1,124 @@
+{
+    "hero": {
+        "headline": "Websites Fade. Stories Last Forever.",
+        "subheadline": "Your business is more than just a service – it’s a story waiting to be told. At Asrnova, we create digital experiences that make your brand impossible to ignore.",
+        "ctaPrimary": "Book Your Free Consultation",
+        "ctaSecondary": "View Our Work"
+    },
+    "vision": {
+        "heading": "Building Real Software for the Future",
+        "content": "At Asrnova, we move beyond basic web design to build scalable, high-performance software solutions that power startups, enterprises, and educational institutions.\n\nWhether you are developing a SaaS MVP, automating complex workflows, or architecting an enterprise-grade platform, we turn ambitious ideas into seamless digital products. We blend technical excellence with narrative depth to ensure your product doesn't just function—it resonates."
+    },
+    "services": [
+        {
+            "id": "web-development",
+            "title": "Custom Web Development",
+            "description": "Your website is more than a digital footprint—it’s a flagship product. We engineer custom platforms, marketing sites, SaaS dashboards, and high-performance web apps using modern frameworks like React.js. Our solutions are lightning-fast, ultra-secure, and built to scale with your ambition."
+        },
+        {
+            "id": "saas-development",
+            "title": "SaaS Development (MVP to Scale)",
+            "description": "SaaS is in our DNA. Whether you're bootstrapping a subscription platform or scaling a B2B powerhouse, we handle full-cycle development—from MVP to multi-tenant infrastructure—delivering elegance, efficiency, and elite-level engineering."
+        },
+        {
+            "id": "mobile-app-development",
+            "title": "Mobile App Development",
+            "description": "We craft mobile apps that don’t just look beautiful—they work like beasts. From React Native cross-platform builds to native solutions (iOS & Android), we architect robust applications with seamless UX, powerful performance, and the flexibility to evolve with your users."
+        },
+        {
+            "id": "ar-vr-solutions",
+            "title": "AR & VR Solutions",
+            "description": "Welcome to the future. We design immersive AR/VR experiences that blend digital and physical worlds—think virtual showrooms, interactive training, gamified learning, and spatial storytelling that hits different."
+        },
+        {
+            "id": "ai-machine-learning",
+            "title": "AI & Machine Learning",
+            "description": "We don’t just use AI—we build with it. From predictive analytics and Natural Language Processing (NLP) to custom chatbots and computer vision, we create intelligent systems that learn, adapt, and deliver results that feel like magic—but run on code."
+        },
+        {
+            "id": "web3-blockchain",
+            "title": "Web3 & Blockchain",
+            "description": "Ownership. Transparency. Trust. We build in the decentralized world—NFT marketplaces, DApps, smart contracts, and DeFi platforms—with bulletproof security and blockchain logic that’s clean, scalable, and future-proof."
+        },
+        {
+            "id": "automation-integrations",
+            "title": "Automation & Integrations",
+            "description": "We connect your tools, sync your data, and automate the chaos. Think custom API development, CRM integrations, webhooks, and AI-driven workflows—all talking to each other seamlessly."
+        },
+        {
+            "id": "ui-ux-design",
+            "title": "UI/UX Design",
+            "description": "Design isn’t just how it looks—it’s how it works. We craft pixel-perfect interfaces, seamless flows, and user-first experiences that make products feel intuitive, thoughtful, and addictive."
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "quote": "Working with AsrNova has been an outstanding experience. Moiz and Hassan truly understand how to bring ideas to life with innovation and precision. Their professionalism, communication, and dedication to delivering high-quality work exceeded our expectations. We couldn't be happier with the results and look forward to working with them again!",
+            "author": "Enayatullah Mudaris",
+            "role": "CEO of Mudaris Academy"
+        }
+    ],
+    "projects": [
+        {
+            "id": "mudaris-academy",
+            "title": "Mudaris Academy",
+            "overview": "A modern Learning Management System (LMS) designed to simplify online education.",
+            "features": "Advanced course management, student progress tracking, live classes, and real-time assessments. The platform ensures a seamless learning experience with an intuitive UI.",
+            "techStack": [
+                "React.js",
+                "Material UI",
+                "Stripe",
+                "NowPayments",
+                "Vite"
+            ],
+            "actionLabel": "View Project"
+        },
+        {
+            "id": "task-trek",
+            "title": "Task Trek",
+            "overview": "An enterprise project management dashboard designed to enhance team collaboration and productivity.",
+            "features": "Real-time task tracking, project timelines, team management, and workflow automation.",
+            "techStack": [
+                "React.js",
+                "Firebase (Firestore & Authentication)",
+                "Redux Toolkit",
+                "Material UI",
+                "Vite"
+            ],
+            "actionLabel": null
+        }
+    ],
+    "whyAsrnova": [
+        {
+            "id": "original-ideas",
+            "title": "Original Ideas Only",
+            "description": "We don’t recycle old trends or templates. Every project is treated like a fresh canvas—unique, bold, and built from scratch with purpose."
+        },
+        {
+            "id": "no-cookie-cutter",
+            "title": "No Cookie-Cutter Sites",
+            "description": "We avoid soul-less templates. If it’s been done a thousand times, it’s not for us. We’re here for work that excites."
+        },
+        {
+            "id": "future-driven",
+            "title": "Future-Driven Solutions",
+            "description": "We don't chase what’s already out there. We craft digital experiences with tomorrow in mind—innovative, scalable, and truly ahead of the curve."
+        },
+        {
+            "id": "focused-quality",
+            "title": "Focused on What Matters",
+            "description": "Quality over quantity—always. We take on fewer projects so we can go deep, challenge the norm, and deliver work that stands out."
+        },
+        {
+            "id": "partners",
+            "title": "Creative Growth Partners",
+            "description": "We’re not just developers. We’re collaborators, thinkers, and partners in your journey—helping you explore ideas you didn’t know were possible."
+        }
+    ],
+    "footer": {
+        "heading": "Ready to Build Something Real?",
+        "body": "We create high-converting platforms that help your business grow and increase revenue. Let’s discuss your goals.",
+        "ctaButton": "Book Your Free Strategy Call"
+    }
+}

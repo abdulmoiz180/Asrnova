@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #3b82f6;
+  --accent-secondary: #a855f7;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #3b82f6 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-premium {
+  background: radial-gradient(circle at top center, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 px-6 md:py-32 md:px-12 lg:px-24;
+  }
+}
