@@ -72,7 +72,8 @@
                 "NowPayments",
                 "Vite"
             ],
-            "actionLabel": "View Project"
+            "actionLabel": "View Case Study",
+            "caseStudySlug": "mudaris-portal"
         },
         {
             "id": "task-trek",

@@ -1,0 +1,125 @@
+[
+    {
+        "slug": "mudaris-portal",
+        "title": "Mudaris Portal — Case Study",
+        "overview": {
+            "description": "Mudaris Portal is a multi-tenant education and academy management platform designed to centralize communication, collaboration, and content delivery for academies.",
+            "status": "Actively developed and maintained",
+            "platforms": [
+                "Web (Live)",
+                "Mobile (Planned)"
+            ],
+            "role": "Full-Stack Developer (Product + Engineering)"
+        },
+        "problemStatement": {
+            "summary": "Educational institutions rely on fragmented tools that lack structure, privacy, and scalability.",
+            "problems": [
+                "No multi-tenant separation",
+                "Unstructured communication",
+                "Weak role-based access",
+                "No centralized content system",
+                "No monetization foundation"
+            ]
+        },
+        "responsibilities": [
+            "System architecture design",
+            "Frontend development with Vite + React",
+            "Database schema and RLS design",
+            "Authentication and authorization",
+            "Real-time messaging",
+            "Rich text editor integration",
+            "Feature roadmap planning"
+        ],
+        "solution": {
+            "description": "A workspace-based multi-tenant platform allowing academies to operate independently.",
+            "coreConcepts": [
+                "Workspaces",
+                "Channels",
+                "Private Messaging",
+                "Admin Controls",
+                "Rich Content"
+            ]
+        },
+        "features": [
+            {
+                "title": "Multi-Tenant Workspaces",
+                "details": [
+                    "Isolated academies",
+                    "Supabase RLS enforcement",
+                    "Multi-role memberships"
+                ]
+            },
+            {
+                "title": "Channels & Group Messaging",
+                "details": [
+                    "Real-time messaging",
+                    "Topic-based channels",
+                    "Role-based access"
+                ]
+            },
+            {
+                "title": "Private Messaging",
+                "details": [
+                    "1-to-1 conversations",
+                    "Secure and real-time",
+                    "Permission controlled"
+                ]
+            },
+            {
+                "title": "Rich Text Editor",
+                "details": [
+                    "TipTap integration",
+                    "Structured content",
+                    "Extensible architecture"
+                ]
+            }
+        ],
+        "techStack": {
+            "frontend": [
+                "Vite",
+                "React",
+                "Tailwind CSS",
+                "Redux"
+            ],
+            "backend": [
+                "Supabase",
+                "PostgreSQL",
+                "RLS",
+                "Realtime"
+            ],
+            "services": [
+                "Resend",
+                "Vimeo"
+            ]
+        },
+        "architecture": {
+            "multiTenancy": "Implemented via Supabase Row Level Security",
+            "dataModel": [
+                "Users",
+                "Workspaces",
+                "Memberships",
+                "Channels",
+                "Messages"
+            ],
+            "realtime": "Supabase realtime subscriptions"
+        },
+        "challenges": [
+            "Complex RLS design",
+            "Balancing MVP with scalability",
+            "Product-focused engineering decisions"
+        ],
+        "outcome": {
+            "status": "Live",
+            "roadmap": [
+                "Paid private groups",
+                "Mobile app (React Native + Expo)",
+                "Admin analytics"
+            ]
+        },
+        "impact": [
+            "Production-grade SaaS experience",
+            "Secure multi-tenant architecture",
+            "End-to-end ownership"
+        ]
+    }
+]

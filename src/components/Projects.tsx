@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import SectionHeading from "./ui/SectionHeading";
 import GlassCard from "./ui/GlassCard";
 import Button from "./ui/Button";
+import Link from "next/link";
 
 interface Project {
     id: string;
@@ -12,6 +13,7 @@ interface Project {
     features: string;
     techStack: string[];
     actionLabel: string | null;
+    caseStudySlug?: string;
 }
 
 interface ProjectsProps {
@@ -56,7 +58,15 @@ export default function Projects({ projects }: ProjectsProps) {
                                         ))}
                                     </div>
 
-                                    {project.actionLabel && (
+                                    {project.actionLabel && project.caseStudySlug && (
+                                        <Link href={`/case-study/${project.caseStudySlug}`}>
+                                            <Button variant="outline" className="px-8">
+                                                {project.actionLabel}
+                                            </Button>
+                                        </Link>
+                                    )}
+
+                                    {project.actionLabel && !project.caseStudySlug && (
                                         <Button variant="outline" className="px-8">
                                             {project.actionLabel}
                                         </Button>
