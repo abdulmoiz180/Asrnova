@@ -6,10 +6,11 @@ import Link from "next/link";
 import Button from "./ui/Button";
 
 const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Projects", href: "#projects" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Services", href: "/#services" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Journal", href: "/blog" },
+    { name: "About", href: "/#about" },
+    { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {

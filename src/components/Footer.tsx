@@ -28,18 +28,19 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Contact</h4>
                         <ul className="space-y-4 text-gray-400 text-sm">
-                            <li>hello@asrnova.com</li>
-                            <li>+971 50 000 0000</li>
-                            <li>Dubai, UAE</li>
+                            <li>
+                                <a href="mailto:info@asrnova.com">info@asrnova.com</a></li>
+                            <li><a href="tel:042 37157284">042 37157284</a></li>
+                            <li>Lahore, Pakistan</li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Social</h4>
                         <ul className="space-y-4 text-gray-400 text-sm">
-                            <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/asrnova/" className="hover:text-white transition-colors">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/" className="hover:text-white transition-colors">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/" className="hover:text-white transition-colors">Instagram</a></li>
                         </ul>
                     </div>
                 </div>
