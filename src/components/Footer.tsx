@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 export default function Footer() {
     return (
@@ -8,8 +10,8 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
                     <div className="col-span-1 md:col-span-1">
-                        <Link href="/" className="text-2xl font-bold font-outfit tracking-tighter mb-6 block">
-                            ASR<span className="text-blue-500">NOVA</span>
+                        <Link href="/" className="mb-6 block">
+                            <Image src={logo} alt="ASRNOVA" height={36} className="w-auto" />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                             We create premium digital stories and software solutions for startups and enterprises.

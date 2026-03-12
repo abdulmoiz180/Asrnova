@@ -73,3 +73,32 @@ h1, h2, h3, h4, h5, h6 {
     mask-image: radial-gradient(circle at center, black, transparent 80%);
   }
 }
+
+/* Funnel form inputs */
+.funnel-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.funnel-input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.funnel-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.funnel-input option {
+  background: #111;
+  color: #fff;
+}

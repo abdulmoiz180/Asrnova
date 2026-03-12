@@ -88,6 +88,22 @@
                 "Vite"
             ],
             "actionLabel": null
+        },
+        {
+            "id": "mughal-labs",
+            "title": "Mughal Labs — Nexus Mobile App",
+            "overview": "A cross-platform mobile application for Mughal Labs, a leading diagnostic laboratory in Lahore, digitizing the patient experience with secure report access, consultant portals, and home sample collection.",
+            "features": "Digital report access via QR code, consultant portal for remote patient lookup, GPS-powered lab & pharmacy locator, home sample collection via WhatsApp, multi-factor & biometric authentication, test rate calculator with welfare pricing tiers, and an in-app donation module.",
+            "techStack": [
+                "React Native",
+                "Redux Toolkit",
+                "React Navigation",
+                "Google Maps",
+                "Biometric Auth",
+                "REST API"
+            ],
+            "actionLabel": "View Case Study",
+            "caseStudySlug": "mughal-labs"
         }
     ],
     "whyAsrnova": [

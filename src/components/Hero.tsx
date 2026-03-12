@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Button from "./ui/Button";
 
 interface HeroProps {
@@ -46,12 +47,16 @@ export default function Hero({ content }: HeroProps) {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="flex flex-col sm:flex-row items-center justify-center gap-6"
                     >
-                        <Button variant="primary" className="w-full sm:w-auto px-10 py-4 text-lg">
-                            {content.ctaPrimary}
-                        </Button>
-                        <Button variant="outline" className="w-full sm:w-auto px-10 py-4 text-lg">
-                            {content.ctaSecondary}
-                        </Button>
+                        <Link href="/consultation" className="w-full sm:w-auto">
+                            <Button variant="primary" className="w-full px-10 py-4 text-lg">
+                                {content.ctaPrimary}
+                            </Button>
+                        </Link>
+                        <Link href="#projects" className="w-full sm:w-auto">
+                            <Button variant="outline" className="w-full px-10 py-4 text-lg">
+                                {content.ctaSecondary}
+                            </Button>
+                        </Link>
                     </motion.div>
                 </motion.div>
             </div>

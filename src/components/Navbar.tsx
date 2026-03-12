@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "./ui/Button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
     { name: "Services", href: "/#services" },
@@ -31,8 +33,8 @@ export default function Navbar() {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-                <Link href="/" className="text-2xl font-bold font-outfit tracking-tighter">
-                    ASR<span className="text-blue-500">NOVA</span>
+                <Link href="/" className="flex items-center">
+                    <Image src={logo} alt="ASRNOVA" height={36} className="w-auto" />
                 </Link>
 
                 {/* Desktop Links */}
@@ -46,9 +48,11 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Button variant="primary" className="py-2 px-5 text-sm">
-                        Let's Talk
-                    </Button>
+                    <Link href="/consultation">
+                        <Button variant="primary" className="py-2 px-5 text-sm">
+                            Let's Talk
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -80,9 +84,11 @@ export default function Navbar() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Button variant="primary" className="w-full">
-                                Let's Talk
-                            </Button>
+                            <Link href="/consultation" onClick={() => setIsMobileMenuOpen(false)}>
+                                <Button variant="primary" className="w-full">
+                                    Let's Talk
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}

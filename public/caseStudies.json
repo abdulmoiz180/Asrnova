@@ -121,5 +121,172 @@
             "Secure multi-tenant architecture",
             "End-to-end ownership"
         ]
+    },
+    {
+        "slug": "mughal-labs",
+        "title": "Mughal Labs — Nexus Mobile App",
+        "overview": {
+            "description": "Nexus — Mughal Labs is a fully native React Native mobile application that serves as a unified digital gateway for patients, consultants, and the organization. The app bridges the gap between Mughal Labs' backend laboratory information system (LIS) and its end users through a clean, intuitive mobile experience.",
+            "status": "Deployed on iOS & Android",
+            "platforms": [
+                "iOS",
+                "Android"
+            ],
+            "role": "Full-Stack Mobile Developer"
+        },
+        "problemStatement": {
+            "summary": "Mughal Labs needed a cross-platform mobile application to digitize their patient experience and streamline operations. Patients had to physically visit lab branches to collect reports, check pricing, or request home sampling — leading to long wait times, inconvenience, and operational bottlenecks.",
+            "problems": [
+                "Patients had no digital access to their lab test reports",
+                "Consultants could not remotely look up patient results",
+                "No online test pricing transparency for patients",
+                "Home sample collection was managed manually via phone calls",
+                "Lab and pharmacy branch locations were not easily discoverable"
+            ]
+        },
+        "responsibilities": [
+            "Cross-platform mobile app architecture (iOS & Android)",
+            "Secure authentication system with MFA & biometrics",
+            "QR code scanning for instant report access",
+            "Google Maps integration with proximity-based sorting",
+            "WhatsApp integration for home sample collection",
+            "Consultant portal for remote patient report retrieval",
+            "Test rate calculator with multi-tier pricing",
+            "PDF report viewing & download functionality"
+        ],
+        "solution": {
+            "description": "We designed and developed Nexus — Mughal Labs, a fully native React Native mobile application that serves as a unified digital gateway for patients, consultants, and the organization — bridging the gap between Mughal Labs' backend LIS and its end users.",
+            "coreConcepts": [
+                "Digital Report Access",
+                "Consultant Portal",
+                "GPS Lab Locator",
+                "Home Sample Collection",
+                "Multi-Factor Authentication",
+                "Test Rate Calculator"
+            ]
+        },
+        "features": [
+            {
+                "title": "Digital Report Access",
+                "details": [
+                    "Login via Patient Number & Case Number or QR code scan",
+                    "View and download test reports as PDFs",
+                    "Real-time status tracking: Registered → Test In Process → Approved → Delivered"
+                ]
+            },
+            {
+                "title": "Consultant Portal",
+                "details": [
+                    "Dedicated physician login",
+                    "Search reports by date range, patient number, or phone",
+                    "Remote access to improve diagnosis turnaround"
+                ]
+            },
+            {
+                "title": "Test Rate Calculator",
+                "details": [
+                    "Search tests by name or code",
+                    "Three pricing tiers: Standard, Zakat, and Welfare Rate",
+                    "Calculate total costs before visiting"
+                ]
+            },
+            {
+                "title": "Lab & Pharmacy Locator",
+                "details": [
+                    "GPS-powered Google Maps integration",
+                    "Auto-detect location & sort by proximity",
+                    "One-tap navigation directions & click-to-call"
+                ]
+            },
+            {
+                "title": "Home Sample Collection",
+                "details": [
+                    "In-app booking form with patient details",
+                    "WhatsApp integration for instant communication",
+                    "Floating WhatsApp button for quick-access booking"
+                ]
+            },
+            {
+                "title": "Secure Authentication",
+                "details": [
+                    "Multi-Factor Authentication with OTP verification",
+                    "Biometric login (Fingerprint/Touch ID)",
+                    "QR Code scanning for instant report access",
+                    "Secure token storage via AsyncStorage"
+                ]
+            },
+            {
+                "title": "Donation Module",
+                "details": [
+                    "In-app donation form for welfare initiatives",
+                    "Three collection methods: Mail/Courier, Bank Cheque, Door-Step Pickup"
+                ]
+            },
+            {
+                "title": "User Profile Management",
+                "details": [
+                    "View and manage personal details",
+                    "Account settings and preferences"
+                ]
+            }
+        ],
+        "techStack": {
+            "frontend": [
+                "React Native 0.72",
+                "JavaScript / JSX",
+                "NativeBase",
+                "FontAwesome Icons",
+                "React Navigation 6"
+            ],
+            "backend": [
+                "RESTful API (Nexus Pro)",
+                "Custom API Auth",
+                "AsyncStorage"
+            ],
+            "services": [
+                "Redux + Redux Toolkit",
+                "React Native Maps + Geolib",
+                "React Native Camera (QR)",
+                "React Native PDF + WebView",
+                "Biometrics"
+            ]
+        },
+        "architecture": {
+            "multiTenancy": "Dual-portal system: Patient access & Consultant access with role-based routing",
+            "dataModel": [
+                "Patients",
+                "Consultants",
+                "Test Reports",
+                "Lab Branches",
+                "Pharmacies",
+                "Donations"
+            ],
+            "realtime": "Real-time report status tracking (Registered → Test In Process → Approved → Delivered)"
+        },
+        "challenges": [
+            "Integrating with legacy laboratory information system (LIS) API",
+            "Implementing multi-factor authentication with biometrics",
+            "GPS-based proximity sorting across multiple branches",
+            "Secure handling of sensitive medical data",
+            "WhatsApp deep-link integration for home sampling workflow",
+            "Supporting three-tier welfare pricing model"
+        ],
+        "outcome": {
+            "status": "Live on iOS & Android",
+            "roadmap": [
+                "Push notifications for report readiness",
+                "In-app payment for test bookings",
+                "Expanded pharmacy services integration"
+            ]
+        },
+        "impact": [
+            "Eliminated in-person visits for report collection — patients access results digitally 24/7",
+            "Reduced consultant turnaround — doctors retrieve patient data remotely in seconds",
+            "Pricing transparency — patients compare rates across Standard, Zakat & Welfare tiers",
+            "Streamlined home sampling — WhatsApp-powered booking replaced manual phone coordination",
+            "Branch discoverability — GPS locator drives walk-in traffic to nearest lab or pharmacy",
+            "Security-first design — MFA and biometric login protect sensitive medical data",
+            "Social welfare support — in-app donation module connects Mughal Labs with community donors"
+        ]
     }
 ]
