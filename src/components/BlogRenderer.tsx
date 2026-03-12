@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
     BlogSection,
     BlogTable,
@@ -76,9 +77,11 @@ function renderContentBlock(block: ContentBlock) {
         case "image":
             return (
                 <figure className="my-8">
-                    <img
+                    <Image
                         src={block.src}
                         alt={block.alt || ""}
+                        width={1200}
+                        height={630}
                         className="rounded-xl w-full object-cover"
                     />
                     {block.caption && (

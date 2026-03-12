@@ -59,6 +59,9 @@ export default function Navbar() {
                 <button
                     className="md:hidden text-white"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={isMobileMenuOpen}
+                    aria-controls="mobile-nav"
                 >
                     {isMobileMenuOpen ? "Close" : "Menu"}
                 </button>
@@ -71,6 +74,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
+                        id="mobile-nav"
                         className="md:hidden glass-dark overflow-hidden"
                     >
                         <div className="flex flex-col gap-4 p-6">

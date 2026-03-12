@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogRenderer from "@/components/BlogRenderer";
@@ -12,6 +13,39 @@ async function getBlogs(): Promise<BlogPost[]> {
     const filePath = path.join(process.cwd(), "public", "blogs.json");
     const fileContent = fs.readFileSync(filePath, "utf8");
     return JSON.parse(fileContent);
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const blogs = await getBlogs();
+    const blog = blogs.find((b) => b.slug === slug);
+
+    if (!blog) {
+        return { title: "Not Found" };
+    }
+
+    const title = blog.meta.title;
+    const description = blog.meta.subtitle ?? "Read insights from Asrnova.";
+    const canonical = `/blog/${slug}`;
+
+    return {
+        title,
+        description,
+        alternates: { canonical },
+        openGraph: {
+            type: "article",
+            url: canonical,
+            title,
+            description,
+            images: [{ url: `/og/default.png` }],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [`/og/default.png`],
+        },
+    };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {

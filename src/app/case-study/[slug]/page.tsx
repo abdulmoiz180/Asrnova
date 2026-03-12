@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CaseStudy } from "@/types/caseStudy";
@@ -11,6 +12,39 @@ async function getCaseStudies(): Promise<CaseStudy[]> {
     const filePath = path.join(process.cwd(), "public", "caseStudies.json");
     const fileContent = fs.readFileSync(filePath, "utf8");
     return JSON.parse(fileContent);
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const caseStudies = await getCaseStudies();
+    const study = caseStudies.find((s) => s.slug === slug);
+
+    if (!study) {
+        return { title: "Not Found" };
+    }
+
+    const title = study.title;
+    const description = study.overview.description;
+    const canonical = `/case-study/${slug}`;
+
+    return {
+        title,
+        description,
+        alternates: { canonical },
+        openGraph: {
+            type: "article",
+            url: canonical,
+            title,
+            description,
+            images: [{ url: `/og/default.png` }],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [`/og/default.png`],
+        },
+    };
 }
 
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
